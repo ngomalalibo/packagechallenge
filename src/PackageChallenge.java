@@ -178,7 +178,14 @@ public class PackageChallenge
                 System.out.println(ce.getMessage());
                 ++testCaseCount;
                 // return to start of while loop
-                continue;
+                if (testCaseCount > testCases.size() - 1)
+                {
+                    break;
+                }
+                else
+                {
+                    continue;
+                }
             }
             finally
             {
