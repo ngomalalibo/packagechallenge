@@ -18,7 +18,7 @@ public class ItemOperations
         // Remove euro symbol from cost
         item[2] = item[2].trim().substring(1, item[2].length());
         double cost = Double.parseDouble(item[2]);
-        // Constraint: Perform constraint checks on no of items, item weight and item cost
+        // Constraint: Perform constraint checks on the number of items per package, item weight and item cost
         if (no > 15)
         {
             throw new ConstraintException("Too many items to choose from in package " + PackageOperations.packageCount + ". Items may not exceed 15.");
